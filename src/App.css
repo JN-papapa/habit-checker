@@ -1,0 +1,117 @@
+.App {
+  text-align: center;
+}
+
+header {
+  background-color: #4a90e2;
+  padding: 20px;
+  color: white;
+}
+
+.month-navigator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.habit-tracker-container, .reflection-container {
+  margin-top: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.add-habit-form {
+  margin-bottom: 20px;
+}
+
+.add-habit-form input {
+  margin-right: 10px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #e0e0e0;
+  padding: 8px;
+  text-align: center;
+  transition: background-color 0.3s ease; /* 色の変化を滑らかに */
+}
+
+.record-cell:hover {
+  background-color: #f5f5f5; /* ホバー時の背景色 */
+  cursor: pointer;
+}
+
+/* 各ステータスの色 */
+.status-ok {
+  background-color: #d4edda; /* 明るい緑色 */
+}
+
+.status-x {
+  background-color: #f8d7da; /* 明るい赤色 */
+}
+
+.status-triangle {
+  background-color: #fff3cd; /* 明るい黄色 */
+}
+
+.status-dash {
+  background-color: #e2e3e5; /* 薄い灰色 */
+}
+
+.delete-habit:hover {
+  color: #c00;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.habit-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-habit {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+}
+
+.reflection-item {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.reflection-item label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.reflection-item textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  min-height: 80px;
+}
